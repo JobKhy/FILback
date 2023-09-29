@@ -1,0 +1,46 @@
+[
+    {
+        "id": 3,
+        "lista": 1,
+        "name":"Ant",
+        "lastName": "coapio",
+        "age": 17,
+        "shirtNumber": 15,
+        "position": "RB",
+        "faltas": 8,
+        "asistencias": 10
+    },
+    {
+        "id": 9,
+        "lista": 3,
+        "name":"Luis",
+        "lastName": "valdez",
+        "age": 17,
+        "shirtNumber": 7,
+        "position": "QB",
+        "faltas": 4,
+        "asistencias": 10
+    },
+    {
+        "id": 4,
+        "lista": 4,
+        "name":"Brau raw",
+        "lastName": "nose",
+        "age": 16,
+        "shirtNumber": 35,
+        "position": "WR",
+        "faltas": 7,
+        "asistencias": 10
+    },
+    {
+        "id": 2,
+        "lista": 2,
+        "name":"Julian",
+        "lastName": "rolls",
+        "age": 18,
+        "shirtNumber": 16,
+        "position": "WR",
+        "faltas": 1,
+        "asistencias": 10
+    }
+]
