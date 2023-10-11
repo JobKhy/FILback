@@ -8,6 +8,7 @@ const app = express();
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000 ;
+console.log('PORT', PORT);
 
 app.use(cors());
 
@@ -18,6 +19,8 @@ app.get('/ping', ( _, res ) => {
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
+    console.log({app});
+    
 });
 
 app.use('/players', playersRouter);
