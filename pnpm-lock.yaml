@@ -13,9 +13,6 @@ dependencies:
     version: 4.18.2
 
 devDependencies:
-  '@flydotio/dockerfile':
-    specifier: ^0.4.10
-    version: 0.4.10
   '@types/cors':
     specifier: ^2.8.14
     version: 2.8.14
