@@ -10,7 +10,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000 ;
 console.log('PORT', PORT);
 
-app.use(cors());
+app.use(cors({origin : '*'}));
 
 app.get('/ping', ( _, res ) => {
     console.log('someone pinged here ');
