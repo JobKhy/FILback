@@ -18,6 +18,16 @@ export const findById = async (id: number): Promise<Player | null> => {
     return entry;
 }
 
+export const deleteById = async (id: number): Promise<Player | null> => {
+    const entry = await prisma.player.delete({
+        where: {
+            id: id
+        }
+    })
+
+    return entry;
+}
+
 export const getAllPlayers = async () : Promise<Player[]> => {
     const data = await prisma.player.findMany();
     console.log(data);

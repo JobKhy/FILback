@@ -13,9 +13,15 @@ router.get('/', async ( _req, res) => {
     res.json(data);
 })
 
-router.get('/:id', ( req, res) => {
-    const player = playerServices.findById(+req.params.id);
-    
+router.get('/:id', async ( req, res) => {
+    const player = await playerServices.findById(+req.params.id);
+    return (player != undefined) 
+    ? res.send(player) 
+    : res.sendStatus(404);
+})
+
+router.delete('/:id', async ( req, res) => {
+    const player = await playerServices.deleteById(+req.params.id);
     return (player != undefined) 
     ? res.send(player) 
     : res.sendStatus(404);
@@ -23,7 +29,6 @@ router.get('/:id', ( req, res) => {
 
 router.get('/list/:list', async( req, res) => {
     const player = await playerServices.findByList(+req.params.list);
-        
         
     return (player != undefined) 
     ? res.send(player) 
